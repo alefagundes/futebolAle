@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+h1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0px;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+.fundo {
+  background-color: rgb(236, 232, 232);
+}

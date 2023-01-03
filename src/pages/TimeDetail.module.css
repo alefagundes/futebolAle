@@ -1,0 +1,48 @@
+.view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.view img {
+  width: 390px;
+  height: 390px;
+}
+
+.containerDados {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 570px;
+  margin: 20px;
+}
+
+.containerDados div h3 {
+  background-color: greenyellow;
+  color: #000;
+  font-weight: bold;
+  font-family: 22px;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.containerDados div h3 span {
+  color: #000;
+}
+
+.back {
+  margin: 10px;
+  padding: 5px;
+  background-color: blue;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  border: 1px solid #333;
+}
