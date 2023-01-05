@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navabr'
 import Home from './pages/Home'
 import TimeDetail from './pages/TimeDetail'
+import Fases from './pages/Fases'
 
 function App() {
   const url = import.meta.env.VITE_URL
@@ -15,7 +16,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/fases" element={<h2>Teste1</h2>} />
+          <Route path="/fases" element={<Fases url={url} />} />
           <Route path="/teste2" element={<h2>Teste2</h2>} />
           <Route path="/" element={<Home />} />
           <Route path="/teste3" element={<h2>Teste3</h2>} />

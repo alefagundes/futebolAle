@@ -1,4 +1,6 @@
 import style from './Home.module.css'
+//impor data moke api
+import { dataMok } from './Home.stub.jsx'
 
 //hooks
 import { useState, useEffect } from 'react'
@@ -22,15 +24,19 @@ const Home = () => {
       const res = await data.json()
       setData(res)
     }
-    reqData()
+    //reqData()
+    setData(dataMok)
   }, [])
+
+  console.log(data)
 
   return (
     <div className={style.fundo}>
       <h1>Campeonato Brasileiro 2022</h1>
       <div className={style.container}>
         {!data && <p>Carregando...</p>}
-        {data.length > 0 && data.map((d) => <CardTime time={d} />)}
+        {data.length > 0 &&
+          data.map((d) => <CardTime key={d.posicao} time={d} />)}
       </div>
     </div>
   )
