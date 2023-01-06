@@ -34,6 +34,9 @@ h2 {
   box-shadow: 1px 2px 5px #333;
   border-radius: 5px;
 }
+.card h4 {
+  font-size: 19px;
+}
 
 .confronto {
   display: flex;

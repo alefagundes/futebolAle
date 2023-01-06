@@ -26,8 +26,8 @@
   background-color: rgb(75, 143, 233);
   color: #fff;
   margin-bottom: 10px;
-  letter-spacing: 1px;
-  font-size: 14px;
+  letter-spacing: 2px;
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
   border: 2px solid #333;
@@ -36,6 +36,8 @@
   background-color: #fff;
   color: rgb(75, 143, 233);
   transition: 0.4s;
+  box-shadow: 1px 2px 5px rgb(75, 143, 233);
+  border-color: rgb(75, 143, 233);
 }
 
 .card p {

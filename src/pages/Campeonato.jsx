@@ -20,8 +20,8 @@ const Campeonato = ({ url }) => {
       const res = await req.json()
       setData(res)
     }
-    reqData()
-    //setData(dataMok)
+    //reqData()
+    setData(dataMok)
   }, [])
 
   return (

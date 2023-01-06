@@ -20,8 +20,8 @@ const Fases = ({ url }) => {
       const res = await req.json()
       setRodadas(res.partidas)
     }
-    reqFases()
-    //setRodadas(rodadasfake.partidas)
+    //reqFases()
+    setRodadas(rodadasfake.partidas)
   }, [])
 
   return (

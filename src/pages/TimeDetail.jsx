@@ -3,6 +3,8 @@ import style from './TimeDetail.module.css'
 import { Link, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
+import { dataMok } from './Home.stub'
+
 const TimeDetail = () => {
   const url = import.meta.env.VITE_URL
   const token = import.meta.env.VITE_TOKEN
@@ -20,7 +22,8 @@ const TimeDetail = () => {
       const res = await req.json()
       setTimes(res)
     }
-    reqTimes()
+    //reqTimes()
+    setTimes(dataMok)
   }, [id])
 
   console.log(times)

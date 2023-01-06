@@ -24,8 +24,8 @@ const Home = () => {
       const res = await data.json()
       setData(res)
     }
-    reqData()
-    //setData(dataMok)
+    //reqData()
+    setData(dataMok)
   }, [])
 
   return (
