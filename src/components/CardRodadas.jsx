@@ -1,7 +1,6 @@
 import style from './CardRodadas.module.css'
 
 const CardRodadas = ({ rod, fase }) => {
-  console.log(rod)
   return (
     <>
       {rod.map((e) => (

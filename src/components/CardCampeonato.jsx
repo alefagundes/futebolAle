@@ -1,7 +1,6 @@
 import style from './CardCampeonato.module.css'
 
 const CardCampeonato = ({ obj: e }) => {
-  console.log(e)
   return (
     <div className={style.card} key={e.campeonato_id}>
       {!e && <p>Carregando</p>}
