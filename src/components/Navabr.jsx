@@ -1,16 +1,20 @@
 import style from './Navbar.module.css'
 import { Link } from 'react-router-dom'
+import { FaFutbol } from 'react-icons/fa'
 
 const Navbar = () => {
   return (
     <nav className={style.navbar}>
-      <Link to="/">
-        Ale<span>Futebol</span>
+      <Link to="/" className={style.logo}>
+        Ale
+        <span>
+          Futebol
+          <FaFutbol />
+        </span>
       </Link>
       <ul>
-        <Link to="/fases">Fases</Link>
-        <Link to="/teste2">teste2</Link>
-        <Link to="/teste3">teste3</Link>
+        <Link to="/confrontos">Confrontos</Link>
+        <Link to="/campeonato">Campeonato</Link>
       </ul>
     </nav>
   )

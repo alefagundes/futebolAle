@@ -2,13 +2,15 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 3px solid blue;
+  border: 2px solid #333;
   margin-bottom: 10px;
   background-color: #fff;
   border-radius: 10px;
+  box-shadow: 1px 3px 5px rgb(75, 143, 233);
 }
 .card h2 {
-  padding: 5px 0px;
+  padding: 10px 5px;
+  text-transform: uppercase;
 }
 
 .card img {
@@ -30,10 +32,16 @@
   font-weight: bold;
   border: 2px solid #333;
 }
+.card a:hover {
+  background-color: #fff;
+  color: rgb(75, 143, 233);
+  transition: 0.4s;
+}
+
 .card p {
   font-size: 16px;
   font-weight: bold;
 }
 .card:hover {
-  font-size: 25px;
+  font-size: 22px;
 }

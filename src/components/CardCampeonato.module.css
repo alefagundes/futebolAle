@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 900px;
+  height: 690px;
+  border: 3px solid #ccc;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(66, 66, 66);
+  box-shadow: 2px 8px 30px rgb(75, 143, 233);
+  background-color: rgb(75, 143, 233);
+  border-radius: 20px;
+}
+
+.card h1 {
+  padding: 0px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  padding: 10px 0px;
+}
+
+.card h1,
+h2 {
+  text-shadow: 1px 3px 5px #fff;
+}
+
+.card img {
+  padding-top: 20px;
+}

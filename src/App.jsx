@@ -8,6 +8,7 @@ import Navbar from './components/Navabr'
 import Home from './pages/Home'
 import TimeDetail from './pages/TimeDetail'
 import Fases from './pages/Fases'
+import Campeonato from './pages/Campeonato'
 
 function App() {
   const url = import.meta.env.VITE_URL
@@ -16,11 +17,10 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/fases" element={<Fases url={url} />} />
-          <Route path="/teste2" element={<h2>Teste2</h2>} />
+          <Route path="/confrontos" element={<Fases url={url} />} />
+          <Route path="/campeonato" element={<Campeonato url={url} />} />
           <Route path="/" element={<Home />} />
-          <Route path="/teste3" element={<h2>Teste3</h2>} />
-          <Route path={`${url}/times/:id`} element={<TimeDetail />} />
+          <Route path={'times/:id'} element={<TimeDetail />} />
         </Routes>
       </BrowserRouter>
     </div>

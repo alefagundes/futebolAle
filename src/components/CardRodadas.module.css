@@ -1,0 +1,47 @@
+h2 {
+  text-align: center;
+}
+
+.card img {
+  width: 75px;
+  height: 75px;
+  padding-top: 10px;
+}
+.card h4 {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.card span {
+  color: rgb(75, 143, 233);
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+.card p {
+  padding: 3px 0px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid #333;
+  padding: 10px;
+  margin: 10px 0px;
+  width: 250px;
+  box-shadow: 1px 2px 5px #333;
+  border-radius: 5px;
+}
+
+.confronto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confronto h2 {
+  text-transform: lowercase;
+  margin: 0px 5px;
+}

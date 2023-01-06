@@ -7,15 +7,28 @@
   font-weight: bold;
   background-color: #333;
   border-bottom: 2px solid rgb(75, 143, 233);
+  width: auto;
 }
 
 .navbar span {
   color: rgb(75, 143, 233);
   padding-left: 3px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo span path {
+  color: #fff;
 }
 
 .navbar ul {
-  width: 300px;
+  width: 330px;
   display: flex;
   align-items: center;
   justify-content: space-around;

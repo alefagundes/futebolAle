@@ -12,7 +12,7 @@ const CardTime = ({ time }) => {
       <p>Total pontos: {time.pontos}</p>
       <p>Colocação: {time.posicao}</p>
       <img src={time.time.escudo} alt={time.time.nome_popular} />
-      <Link to={`${url}/times/${time.time.time_id}`}>Ver mais</Link>
+      <Link to={`/times/${time.time.time_id}`}>Ver mais</Link>
     </div>
   )
 }

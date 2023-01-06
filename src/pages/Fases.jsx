@@ -2,6 +2,7 @@ import style from './Fases.module.css'
 import { rodadasfake } from './Fases.stub.jsx'
 
 import { useState, useEffect } from 'react'
+import CardRodadas from '../components/CardRodadas'
 
 const Fases = ({ url }) => {
   const token = import.meta.env.VITE_TOKEN
@@ -26,19 +27,16 @@ const Fases = ({ url }) => {
   console.log(Object.entries(rodadas))
 
   return (
-    <div>
-      <h1>Fases Brasileirão 2022</h1>
-      {rodadas.length === 0 && <p>Carregando...</p>}
-      {rodadas &&
-        Object.entries(rodadas).map((value) => (
-          <div key={value[0]}>
-            <p>{value[0]}</p>
-            {value[1].map((e) => (
-              <p key={e.partida_id}>{e.placar}</p>
-            ))}
-          </div>
-        ))}
-    </div>
+    <>
+      <h1>Confrontos do Brasileirão 2022</h1>
+      <div className={style.container}>
+        {rodadas.length === 0 && <p>Carregando...</p>}
+        {rodadas &&
+          Object.entries(rodadas).map((value) => (
+            <CardRodadas key={value[0]} rod={value[1]} fase={value[0]} />
+          ))}
+      </div>
+    </>
   )
 }
 
