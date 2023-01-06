@@ -24,11 +24,9 @@ const Home = () => {
       const res = await data.json()
       setData(res)
     }
-    //reqData()
-    setData(dataMok)
+    reqData()
+    //setData(dataMok)
   }, [])
-
-  console.log(data)
 
   return (
     <div className={style.fundo}>
