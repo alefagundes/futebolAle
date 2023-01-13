@@ -3,8 +3,6 @@ import style from './CardTime.module.css'
 import { Link } from 'react-router-dom'
 
 const CardTime = ({ time }) => {
-  const url = import.meta.env.VITE_URL
-
   console.log(time)
   return (
     <div className={style.card}>

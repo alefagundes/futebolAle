@@ -38,12 +38,13 @@ h1 {
 }
 
 .back {
-  margin: 10px;
+  margin-bottom: 30px;
   padding: 5px;
-  background-color: blue;
+  background-color: rgb(75, 143, 233);
   border-radius: 5px;
   text-decoration: none;
   font-size: 20px;
   color: #fff;
-  border: 1px solid #333;
+  border: 1px solid #fff;
+  box-shadow: 2px 3px 5px rgb(75, 143, 233);
 }
