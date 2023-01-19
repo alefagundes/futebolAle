@@ -3,11 +3,12 @@ import { rodadasfake } from './Fases.stub.jsx'
 
 import { useState, useEffect } from 'react'
 import CardRodadas from '../components/CardRodadas'
+import Search from '../components/Search'
 
 const Fases = ({ url }) => {
   const token = import.meta.env.VITE_TOKEN
-
-  const [rodadas, setRodadas] = useState([])
+  const [rodadas, setRodadas] = useState(Object.entries(rodadasfake.partidas))
+  const [allrod, setAllrod] = useState(Object.entries(rodadasfake.partidas))
 
   useEffect(() => {
     const reqFases = async () => {
@@ -21,16 +22,17 @@ const Fases = ({ url }) => {
       setRodadas(res.partidas)
     }
     //reqFases()
-    setRodadas(rodadasfake.partidas)
+    //setRodadas(rodadasfake.partidas)
   }, [])
 
   return (
     <>
       <h1>Confrontos do Brasileirão 2022</h1>
+      {rodadas.length === 0 && <p>Carregando...</p>}
+      <Search setRodadas={setRodadas} rodadas={rodadas} allrod={allrod} />
       <div className={style.container}>
-        {rodadas.length === 0 && <p>Carregando...</p>}
         {rodadas &&
-          Object.entries(rodadas).map((value) => (
+          rodadas.map((value) => (
             <CardRodadas key={value[0]} rod={value[1]} fase={value[0]} />
           ))}
       </div>

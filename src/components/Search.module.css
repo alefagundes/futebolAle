@@ -1,0 +1,109 @@
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px;
+}
+
+.formulario input[type='text'] {
+  width: 300px;
+  border: none;
+  border-bottom: 2px solid #333;
+  margin-right: 10px;
+  height: 35px;
+}
+
+.formulario input[type='text']::placeholder {
+  font-size: 16px;
+}
+
+.formulario input[type='text']:focus {
+  outline: none;
+  font-size: 16px;
+}
+
+.formulario button {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 1px 3px 4px #333;
+  border-radius: 50%;
+}
+
+.formulario button:hover {
+  color: rgb(116, 116, 248);
+  transition: 0.4s;
+}
+
+.back {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 1px 3px 4px #333;
+  border-radius: 50%;
+  margin: 0px 8px;
+}
+
+.back:hover {
+  color: red;
+  transition: 0.4s;
+}
+
+.alignFormBack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 10px;
+}
+
+.mostradores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mostradores p {
+  margin: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Helvetica;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination button {
+  border: 1px solid transparent;
+  background-color: transparent;
+  margin: 5px;
+  font-size: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1;
+  border-radius: 4px;
+}
+
+.btnAmount:hover {
+  color: rgb(69, 201, 69);
+  border: 1px solid #000;
+  transition: 0.4s;
+}
+
+.btnDecrease:hover {
+  color: red;
+  transition: 0.4s;
+  border: 1px solid #000;
+}
